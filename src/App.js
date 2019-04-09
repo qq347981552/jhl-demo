@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MyMenu from './index/menu'
+import Top from './common/top'
 import {BackTop,Layout } from 'antd'
 import './App.css';
 
@@ -10,17 +11,16 @@ const {
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="App" >
 
                 <Layout>
-                    <Header >
-
+                    <Header  style={{background:"#ffffff"}} >
+                        <Top/>
                     </Header>
                     <Content>
 
                         <MyMenu/>
-                        <br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 
                     </Content>
                     <Footer>

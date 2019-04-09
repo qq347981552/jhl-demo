@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "src":"http://www.hunion.com.cn./Public/Uploads/TopShow_1.png",
+      "title":"提示信息",
+      "url":"#"
+    },
+    {
+      "src":"http://www.hunion.com.cn./Public/Uploads/TopShow_2.png",
+      "title":"提示信息",
+      "url":"https://www.baidu.com"
+    },
+    {
+      "src":"http://www.hunion.com.cn./Public/Uploads/TopShow_3.png",
+      "title":"提示信息",
+      "url":"#"
+    }
+
+  ]
+}
