@@ -1,6 +1,6 @@
 import React, {Component} from "react"
-import {Row, Col} from 'antd'
-import {Card} from 'antd'
+import {Row, Col,Card} from 'antd'
+import {Link} from "react-router"
 import './index.css'
 
 export default class content extends Component {
@@ -11,7 +11,7 @@ export default class content extends Component {
                 <Row gutter={16}>
                     {
                         data.map((item, index) => {
-                            var a=(<a href={'/'+item.demo_id}>查看详情</a>)
+                            var a=(<Link to={'/detail/'+item.demo_id}>查看详情</Link>)
                             return (
                                 <Col className="gutter-row" style={{marginBottom:"20px"}} key={index} span={8}>
                                     <Card

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import MyMenu from './index/menu'
+
+import Router from "./router"
 import Top from './common/top'
 import {BackTop,Layout } from 'antd'
 import './App.css';
@@ -19,8 +20,7 @@ class App extends Component {
                     </Header>
                     <Content>
 
-                        <MyMenu/>
-
+                        <Router/>
 
                     </Content>
                     <Footer>
