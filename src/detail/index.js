@@ -30,8 +30,6 @@ export default class Detail extends Component {
             cardContext = (
                 <div >
                     <Button style={{marginBottom:"20px"}} type="primary">进入演示系统</Button>
-
-
                     <Button type="primary">获取登录密码</Button>
                 </div>
             );
