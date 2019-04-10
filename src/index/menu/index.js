@@ -1,10 +1,10 @@
 import React, {Component} from "react"
 import {Menu, Icon} from 'antd'
-import {httpPost, httpGet} from "../../util/http"
+import { httpGet} from "../../util/http"
 import Content from "../content"
 
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+// const SubMenu = Menu.SubMenu;
+// const MenuItemGroup = Menu.ItemGroup;
 
 
 export default class MyMenu extends Component {

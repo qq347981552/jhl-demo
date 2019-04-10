@@ -6,7 +6,7 @@ import {BackTop,Layout } from 'antd'
 import './App.css';
 
 const {
-    Header, Footer, Sider, Content,
+    Header, Footer, Content,
 } = Layout;
 
 class App extends Component {

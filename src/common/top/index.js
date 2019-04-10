@@ -1,5 +1,6 @@
 import React, {Component} from "react"
-import {Button, Carousel} from 'antd';
+import { Carousel} from 'antd';
+import Login from '../login'
 import {httpGet} from "../../util/http";
 import "./index.css"
 
@@ -27,7 +28,7 @@ export default class Top extends Component {
                 <div style={{textAlign: "left", float: "left", width: "100%"}}>
                     <img src="/img/logo.png" style={{float: "left"}}/>
                     <div style={{float: "right"}}>
-                        <Button type="primary" icon="login">微信登陆</Button>
+                        <Login type="top" />
                     </div>
                 </div>
                 <div style={{textAlign: "left", float: "left", width: "100%"}}>
