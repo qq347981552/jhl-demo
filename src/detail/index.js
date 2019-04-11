@@ -1,7 +1,8 @@
 import React, {Component} from "react"
-import {Row, Col, Card, Button} from 'antd';
+import {Row, Col, Card, Button,Typography } from 'antd';
 import {httpGet} from "../util/http";
 import Login from '../common/login'
+const { Title,Text } = Typography;
 
 export default class Detail extends Component {
 
@@ -48,11 +49,12 @@ export default class Detail extends Component {
                 <div style={{width: "1200px", margin: "0 auto"}}>
                     <Row>
                         <Col span={18}>
-                            <div>
-                                {demo_title}
-                            </div>
-                            <div>
-                                {demo_context}
+                            <div style={{ width:"100%",height:"24px" }}></div>
+                            <Title>
+                                <h4 >{demo_title}</h4>
+                            </Title>
+                            <div style={{ padding:"0 20px",boxSizing:"border-box" }}>
+                                <Text  >{demo_context}</Text>
                             </div>
                         </Col>
                         <Col span={6}>

@@ -52,8 +52,10 @@ export default class MyMenu extends Component {
                     {
                         data.map((item, index) => {
                                 return (
-                                    <Menu.Item key={index}>
-                                        <Icon type={item.type_icon}/>{item.type_title}
+                                    <Menu.Item key={index} style={{fontSize:"16px"}}>
+                                        {/*<div style={{fontSize:"16px;"}}>*/}
+                                            <Icon type={item.type_icon}/>{item.type_title}
+                                        {/*</div>*/}
                                     </Menu.Item>
                                 )
                             }
@@ -62,7 +64,7 @@ export default class MyMenu extends Component {
                 </Menu>
 
                 <div style={{width:"1200px",margin: "0 auto"}}>
-                    <div style={{textAlign:"left",fontSize:"24px",margin:"20px 0"}}>
+                    <div style={{textAlign:"center",fontSize:"24px",margin:"40px 0 20px 0",color:"#0d1a26"}}>
                         {this.state.typeName}演示案例
                     </div>
                     <Content data={this.state.showData}/>

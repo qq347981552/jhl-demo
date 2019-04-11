@@ -49,7 +49,8 @@ export default class Login extends Component {
 
                 return (
                    <div>
-                       <Avatar src={data["headimgurl"]} />{data["nickname"]}
+                       <Avatar style={{ marginTop:"-6.5px" }} src={data["headimgurl"]} />
+                       <div style={{ marginLeft:"6px",float:"right" }}>{data["nickname"]}</div>
                    </div>
 
                 )
