@@ -23,6 +23,7 @@ export default class Login extends Component {
 
     submit = (e, data) => {
 
+
         httpGet("/login.json")
             .then(res => {
                 return res.json()

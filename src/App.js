@@ -1,10 +1,12 @@
+
 import React, {Component} from 'react';
 
 import Router from "./router"
 import Top from './common/top'
 import {BackTop,Layout } from 'antd'
 import './App.css';
-import 'babel-polyfill'
+
+
 
 const {
     Header, Footer, Content,
@@ -12,6 +14,7 @@ const {
 
 class App extends Component {
     render() {
+
         return (
             <div className="App" >
 

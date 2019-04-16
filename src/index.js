@@ -1,3 +1,12 @@
+import 'core-js/es/map';
+import 'core-js/es/set';
+import 'raf/polyfill';
+import 'react-app-polyfill/ie9'
+import 'babel-polyfill';
+import 'fetch-detector';
+import 'fetch-ie8';
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

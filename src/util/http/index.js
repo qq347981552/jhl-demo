@@ -5,6 +5,11 @@ export function httpGet(url) {
     return result
 }
 
+
+export function httpGetSuccess(url,success) {
+    var result = fetch(url).then(res=>{return res.json()}).then(success);
+    return result
+}
 /**
  * post
  *

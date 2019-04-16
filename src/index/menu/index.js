@@ -44,22 +44,26 @@ export default class MyMenu extends Component {
 
     render() {
         let data = this.state.data;
+        let dataShow=[];
+        for(var index in data){
+            var  item=data[index];
+            dataShow.push(
+                <Menu.Item key={index} style={{fontSize:"16px"}}>
+                    {/*<div style={{fontSize:"16px;"}}>*/}
+                    <Icon type={item.type_icon}/>{item.type_title}
+                    {/*</div>*/}
+                </Menu.Item>
+            )
+        }
         return (
             <div>
                 <Menu onClick={this.handleClick}
                       selectedKeys={[this.state.current]}
                       mode="horizontal">
                     {
-                        data.map((item, index) => {
-                                return (
-                                    <Menu.Item key={index} style={{fontSize:"16px"}}>
-                                        {/*<div style={{fontSize:"16px;"}}>*/}
-                                            <Icon type={item.type_icon}/>{item.type_title}
-                                        {/*</div>*/}
-                                    </Menu.Item>
-                                )
-                            }
-                        )
+                        // data.map((item, index) => {
+                        dataShow
+
                     }
                 </Menu>
 

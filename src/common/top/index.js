@@ -23,6 +23,21 @@ export default class Top extends Component {
     render() {
 
         let data = this.state.data;
+
+        let dataShow=[];
+        for(var index in data){
+            var  item=data[index];
+            dataShow.push(
+                <a href={item.url} key={index}>
+                    <div title={item.title}>
+
+                        <img src={item.src}  alt=""/>
+
+                    </div>
+                </a>
+            )
+        }
+
         return (
             <div>
                 <div style={{textAlign: "left", float: "left", width: "100%"}}>
@@ -34,21 +49,8 @@ export default class Top extends Component {
                 <div style={{textAlign: "left", float: "left", width: "100%"}}>
                     <Carousel autoplay>
                         {
-                            data.map((item, index) => {
-                                return (
-                                    <a href={item.url} key={index}>
-                                        <div title={item.title}>
-
-                                            <img src={item.src}  alt=""/>
-
-                                        </div>
-                                    </a>
-
-                                )
-                            })
+                            dataShow
                         }
-
-
                     </Carousel>
                 </div>
             </div>
