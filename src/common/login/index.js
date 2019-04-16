@@ -8,7 +8,7 @@ import {Encrypt, Decrypt} from "../../util/aes";
 export default class Login extends Component {
     constructor() {
         super();
-        var data = cookie.load('user_data');
+        var data = cookie.load('USERDEOMDATA');
         if (!data) {
             data = {}
         } else {
@@ -29,7 +29,7 @@ export default class Login extends Component {
             })
             .then(data => {
                 let a = Encrypt(JSON.stringify(data));
-                cookie.save('user_data', a, 60);
+                cookie.save('USERDEOMDATA', a, 60);
                 this.setState({
                     data:data
                 })
@@ -45,7 +45,7 @@ export default class Login extends Component {
         var {type} =this.props;
         console.log(typeof(data),data["openid"])
         if (data["openid"]) {
-            if(type=="top"){
+            if(type==="top"){
 
                 return (
                    <div>

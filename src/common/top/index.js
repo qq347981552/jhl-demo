@@ -26,7 +26,7 @@ export default class Top extends Component {
         return (
             <div>
                 <div style={{textAlign: "left", float: "left", width: "100%"}}>
-                    <img src="/img/logo.png" style={{float: "left"}}/>
+                    <img src="/img/logo.png" style={{float: "left"}}  alt=""/>
                     <div style={{float: "right"}}>
                         <Login type="top" />
                     </div>
@@ -39,7 +39,7 @@ export default class Top extends Component {
                                     <a href={item.url} key={index}>
                                         <div title={item.title}>
 
-                                            <img src={item.src}/>
+                                            <img src={item.src}  alt=""/>
 
                                         </div>
                                     </a>

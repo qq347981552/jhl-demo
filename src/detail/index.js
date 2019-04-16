@@ -25,7 +25,7 @@ export default class Detail extends Component {
     }
 
     render() {
-        let {demo_title, demo_context, domo_url, dome_getUser} = this.state.data;
+        let {demo_title, demo_context, domo_url} = this.state.data;
         var cardContext;
         if (domo_url) {
             cardContext = (
